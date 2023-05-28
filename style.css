@@ -1,0 +1,32 @@
+nav ul {
+    display: flex;
+    background-color: #1b0738;
+    padding: 20px 0px 10px 0px;
+    align-items: center;
+  }
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: #FFED48;
+    height: 100%;
+}
+
+.logo img {
+    justify-content: center;
+    width: 40%;
+}
+
+.flex-menu {
+    padding-bottom: 50px;
+    display: flex;
+}
+.flex-menu {
+    flex-wrap: 10;
+    justify-content: space-evenly;
+}
+.flex-menu img {
+    width: 50%;
+}

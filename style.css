@@ -1,10 +1,20 @@
 nav ul {
     display: flex;
-    text-decoration: none;
     text-decoration-color: white;
     background-color: #ED008E;
     align-items: center;
     justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
   }
 
 img {
@@ -13,13 +23,52 @@ img {
 
 body {
     background-color: #FFED48;
+    margin: auto;
     height: 100%;
 }
 
-.logo img {
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 35px;
+    text-align: center;
+  }
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    font-size: 12px;
+}
+
+.homepage {
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
     justify-content: center;
     align-items: center;
     width: 40%;
+    padding-left: 420px;
 }
 
 .flex-menu {
@@ -33,4 +82,77 @@ body {
 }
 .flex-menu img {
     width: 50%;
+}
+
+.flex-me {
+    display: flex;
+    padding: 90px 60px;
+    margin-right: 80px;
+  }
+.flex-me div {
+    flex-wrap: wrap;
+}
+.flex-me img {
+    width: 300%;
+    
+}
+
+.flex-me-2 {
+    display: flex;
+    padding: 90px 60px;
+    margin-left: 80px;
+  }
+.flex-me-2 div {
+    flex-wrap: wrap;
+}
+.flex-me-2 img {
+    width: 300%;
+    
+}
+
+.flex-steps {
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+.flex-steps {
+    flex-wrap: 10;
+    justify-content: space-around;
+}
+
+
+.flex-shop {
+    display: flex;
+    padding: 90px 60px;
+    margin-right: 80px;
+  }
+.flex-shop div {
+    flex-wrap: wrap;
+}
+.flex-shop img {
+    width: 50%;
+    
+}
+
+.flex-shop-2 {
+    display: flex;
+    padding: 90px 60px;
+    margin-left: 80px;
+  }
+.flex-shop-2 div {
+    flex-wrap: wrap;
+}
+.flex-shop-2 img {
+    width: 50%;
+    
+}
+
+.flex-gallery {
+        width: 80%;
+        padding-top: 20px;
+        line-height: 24px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 40px;
 }

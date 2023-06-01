@@ -146,32 +146,29 @@ a {
 
 
 .flex-shop {
+    width: 65%;
     display: flex;
     padding: 90px 60px;
     margin-right: 80px;
     margin-left: 20px;
     border-style: solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 40px;
   }
 .flex-shop div {
     flex-wrap: wrap;
 }
 .flex-shop img {
-    width: 50%;
+    width: 70%;
 }
 
-.flex-shop-2 {
-    display: flex;
-    padding: 90px 60px;
-    margin-right: 20px;
-    margin-left: 80px;
-    border-style: solid;
-  }
-.flex-shop-2 div {
-    flex-wrap: wrap;
+.flex-shop:nth-child(odd) {
+    flex-direction: row;
 }
-.flex-shop-2 img {
-    width: 50%;
-    
+
+.flex-shop:nth-child(even) {
+    flex-direction: row;
 }
 
 .flex-gallery {
@@ -184,7 +181,47 @@ a {
         grid-gap: 40px;
 }
 
+
+
 @media only screen and (max-width: 768px) {
+
+h3 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        margin: 14px;
+}
+
+.homepage {
+        align-items: center;
+        justify-content: center;
+}
+    
+.logo {
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        width: 150%;
+}
+    
+.flex-menu {
+        padding-top: 40px;
+        padding-bottom: 50px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 40px;
+}
+.flex-menu {
+        flex-wrap: 10;
+        justify-content: space-evenly;
+}
+.flex-menu img {
+        width: 75%;
+}
+
 .flex-me:nth-child(odd) {
     flex-direction: column-reverse;
     width: 100%;
@@ -199,5 +236,34 @@ a {
 .flex-me img {
     width: 100%;
     padding-top: 30px;
+}
+
+.risoprocess img {
+    width:100%;
+    align-items: center;
+}
+
+.flex-steps {
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: 10;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+
+.flex-gallery {
+    width: 80%;
+    padding-top: 20px;
+    line-height: 24px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 40px;
+    padding-bottom: 30px;
 }
 }

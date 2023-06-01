@@ -123,8 +123,7 @@ a {
 .risoprocess img {
     width: 70%;
     align-items: center;
-    padding-left: 420px;
-    padding-bottom: 20px;
+    margin: auto;
 }
 
 .flex-steps {
@@ -148,20 +147,24 @@ a {
 
 .flex-shop {
     width: 65%;
-    display: flex;
-    padding: 90px 60px;
-    margin-right: 80px;
-    margin-left: 20px;
-    border-style: solid;
+    margin: auto;
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 40px;
+    background:rgb(1, 175, 241);
   }
 .flex-shop div {
     flex-wrap: wrap;
 }
 .flex-shop img {
-    width: 70%;
+    width: 100%;
+    height: 100%;
+}
+
+.blue {
+    background: rgb(1, 175, 241);
+    padding: 40px;
 }
 
 .flex-shop:nth-child(odd) {
@@ -255,6 +258,7 @@ h3 {
 .risoprocess img {
     width:100%;
     align-items: center;
+    margin: auto;
 }
 
 .flex-steps {
@@ -268,6 +272,36 @@ h3 {
     justify-content: space-around;
     flex-direction: column;
     
+}
+
+.flex-shop {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    background:rgb(1, 175, 241);
+  }
+.flex-shop div {
+    flex-wrap: wrap;
+}
+.flex-shop img {
+    width: 110%;
+    height: 100%;
+}
+
+.blue {
+    background: rgb(1, 175, 241);
+    padding: 40px;
+}
+
+.flex-shop:nth-child(odd) {
+    flex-direction: row;
+}
+
+.flex-shop:nth-child(even) {
+    flex-direction: row;
 }
 
 .flex-gallery {

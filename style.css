@@ -75,10 +75,11 @@ a {
 .logo {
     justify-content: center;
     align-items: center;
+    align-content: center;
     text-align: center;
-    width: 40%;
+    width: 70%;
     padding-top: 70px;
-    padding-left: 450px;
+    padding-left: 440px;
 }
 
 .flex-menu {
@@ -119,9 +120,10 @@ a {
 }
 
 .risoprocess img {
-    width: 50%;
+    width: 70%;
     align-items: center;
-    padding-left: 360px;
+    padding-left: 420px;
+    padding-bottom: 20px;
 }
 
 .flex-steps {
@@ -132,11 +134,12 @@ a {
     align-items: center;
     flex-wrap: 10;
     justify-content: space-around;
+    
 }
 
 .unique {
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     margin-right: 80px;
     margin-left: 80px;
 }

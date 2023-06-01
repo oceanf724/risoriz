@@ -32,10 +32,10 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     line-height: 30px;
-    padding-left: 90px;
-    padding-right: 90px;
     padding-bottom: 35px;
     text-align: center;
+    margin: auto;
+    width: 80%;
   }
 
 h1 {
@@ -77,9 +77,9 @@ a {
     align-items: center;
     align-content: center;
     text-align: center;
-    width: 70%;
+    width: 40%;
+    margin: auto;
     padding-top: 70px;
-    padding-left: 440px;
 }
 
 .flex-menu {
@@ -88,9 +88,10 @@ a {
     display: flex;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
 }
-.flex-menu {
-    flex-wrap: 10;
+.flex-menu div {
+    flex: 1;
     justify-content: space-evenly;
 }
 .flex-menu img {
@@ -185,6 +186,16 @@ a {
 
 @media only screen and (max-width: 768px) {
 
+p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        line-height: 30px;
+        padding-bottom: 35px;
+        text-align: left;
+        margin: auto;
+        width: 80%;
+    }
+
 h3 {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 14px;
@@ -201,7 +212,9 @@ h3 {
         align-items: center;
         align-content: center;
         text-align: center;
-        width: 150%;
+        width: 60%;
+        margin: auto;
+        padding-top: 70px;
 }
     
 .flex-menu {
@@ -213,13 +226,14 @@ h3 {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         grid-gap: 40px;
+        flex-wrap: wrap;
 }
-.flex-menu {
-        flex-wrap: 10;
+.flex-menu div {
+        flex: 50%;
         justify-content: space-evenly;
 }
 .flex-menu img {
-        width: 75%;
+        width: 70%;
 }
 
 .flex-me:nth-child(odd) {
